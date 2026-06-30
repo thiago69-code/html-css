@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em Html</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+           border-collapse: collapse;
+            width: 300px;
+            
+        }
+
+        td {
+            border: 1px solid black;
+           padding: 8px;
+        }
+
+        .luz:hover {
+        background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+
+    <!--
+        HIERARQUIA DE TABELAS
+            Table = Tabela
+                Table Row = Linha de tabela
+                    Table Header = Cabeçalho da Tabela
+                        Table Data = Dados da Tabela
+    -->
+    <table>
+        <tr> <!--Primeira Linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td class="luz">C1</td>
+        </tr>
+        <tr> <!--Segunda Linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="luz">C2</td>
+        </tr> 
+        <tr> <!--Terceira Linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="luz">C3</td>
+        </tr>
+        <tr> <!--Quarta Linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="luz">C4</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
