@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        table {
+            
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            background-color: rgba(128, 128, 128, 0.219);
+        }
+
+        td {
+            border: 1px solid white;
+            vertical-align: top;
+        }
+        
+    </style>
+     <!--As letras vão para cima 'vertical-align' (top, middle, bottom)-->
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td rowspan="2">C</td>
+            </tr>
+            <tr>
+                <!-- <td>D</td> -->
+                <td>E</td>
+                <!-- <td>F</td> -->
+            </tr>
+            <tr>
+                <td colspan="2">G</td>
+                <!-- <td>H</td> -->
+                <td>I</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

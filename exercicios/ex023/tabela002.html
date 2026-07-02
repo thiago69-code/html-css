@@ -12,6 +12,7 @@
         table {
             width: 500px;
            border-collapse: collapse;
+           position: relative;
         }
 
         td, th {
@@ -25,12 +26,23 @@
             padding: 10px;
             background-color: lightgray;
         }
-/* PSEUDO-CLASSES PARA CORES DE TABELAS
-2nt, 2nt-1, odd, even */
+
+        /* thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(14, 12, 12);
+        } */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(14, 12, 12);
+        }
+
         tbody > tr:nth-child(even) {
             background-color: gray;
         }
-
+/* PSEUDO-CLASSES PARA CORES DE TABELAS
+2nt, 2nt-1, odd, even */
         thead, tfoot {
             background-color: rgb(14, 12, 12);
             color: white;
