@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+
+        }
+        caption {
+            font-size: 1.9em;
+            font-weight: bold;
+        }
+        .nome, .idade {
+            background-color: rgba(128, 128, 128, 0.685);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <colgroup>
+        <col class="nome">
+        <col class="sexo">
+        <col class="idade" span="2">
+        <!-- <col class="cidade"> -->
+        </colgroup>
+        <caption>Quadro de Identificação</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Cidade</th>
+        </tr>
+        <tr>
+            <td>Alexa</td>
+            <td>F</td>
+            <td>19</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>F</td>
+            <td>15</td>
+            <td>RJ</td>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>M</td>
+            <td>33</td>
+            <td>MG</td>
+        </tr>
+    </table>
+</body>
+</html>
